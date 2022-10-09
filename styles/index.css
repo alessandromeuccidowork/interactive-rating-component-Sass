@@ -1,0 +1,181 @@
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.938rem;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main h1 {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin: 2rem 0 0.5rem 0;
+}
+main p {
+  color: hsl(217deg, 12%, 63%);
+  line-height: 1.5rem;
+  font-size: 0.938rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.card {
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(217deg, 12%, 63%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 21.625rem;
+  border-radius: 2rem;
+  margin: 0;
+  padding: 2.2rem;
+  box-shadow: inset 0px -170px 100px 80px rgba(0, 0, 0, 0.3);
+}
+
+.invisible {
+  display: none;
+}
+
+.star-icon {
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+ul li {
+  background-color: hsl(213deg, 19%, 18%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.938rem;
+  border-radius: 50%;
+}
+ul button {
+  color: hsl(217deg, 12%, 63%);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 3.1rem;
+  height: 3.1rem;
+}
+
+#ratings-btn {
+  transition: all 0.5s;
+}
+
+#ratings-btn:hover {
+  background-color: hsl(25deg, 97%, 53%);
+}
+
+button:focus {
+  background-color: hsl(216deg, 12%, 54%);
+  color: #FFF;
+}
+
+#submit-btn {
+  background-color: hsl(25deg, 97%, 53%);
+  font-size: 0.938rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.8rem;
+  color: #FFF;
+  transition: all 1s;
+}
+
+#submit-btn:hover {
+  background-color: #FFF;
+  color: hsl(25deg, 97%, 53%);
+}
+
+#submit-btn:focus {
+  background-color: #FFF;
+  color: hsl(25deg, 97%, 53%);
+}
+
+#thanks-state {
+  text-align: center;
+}
+#thanks-state p {
+  margin: 0 0.3rem 0 0.3rem;
+}
+
+h2 {
+  color: #FFF;
+  margin: 2rem 0 1rem 0;
+}
+
+.illustration-thanks {
+  margin: 0.5rem auto 1.5rem auto;
+}
+
+#vote-container {
+  background-color: hsl(213deg, 19%, 18%);
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 50rem;
+  margin: auto;
+  padding: 0.5rem 0.5rem;
+  width: 50%;
+}
+#vote-container p {
+  color: hsl(25deg, 97%, 53%);
+  display: inline;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  margin-top: 10rem;
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 16.9rem;
+  }
+  .card h1 {
+    font-size: 1.5rem;
+  }
+  .card h2 {
+    font-size: 1.4rem;
+  }
+  .card p {
+    font-size: 0.85rem;
+  }
+  ul button {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+  .star-icon {
+    padding: 0.7rem;
+  }
+  #submit-btn {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+  #vote-container {
+    padding: 0.3rem 0.1rem;
+    width: 65%;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=index.css.map */

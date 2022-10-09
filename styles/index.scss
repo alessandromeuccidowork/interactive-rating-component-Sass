@@ -1,0 +1,247 @@
+// ## Colors
+// ### Primary
+
+$orange: hsl(25, 97%, 53%);
+
+// ### Neutral
+
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+// ## Typography
+
+$main-font: 'Overpass', sans-serif;
+
+$paragraph: 0.938rem;
+
+$regular: 400;
+$bold: 700;
+
+
+// 
+
+body {
+    background-color: $very-dark-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $main-font;
+    font-size: $paragraph;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+
+    h1 {
+        color: #FFF;
+        font-weight: $bold;
+        font-size: 1.7rem;
+        margin: 2rem 0 0.5rem 0;
+    }
+
+    p {
+        color: $light-grey;
+        line-height: 1.5rem;
+        font-size: $paragraph;
+        font-weight: $regular;
+        margin-top: 0;
+    }
+}
+
+
+
+// Card Ratings 
+
+.card {
+    background-color: $dark-blue;
+    color: $light-grey;
+    // font-weight: $bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 21.625rem;
+    border-radius: 2rem;
+    margin: 0;
+    padding: 2.2rem;
+    box-shadow: inset 0px -170px 100px 80px rgba(0,0,0,0.3);
+}
+
+.invisible {
+    display: none;
+}
+
+.star-icon {
+    background-color: $dark-blue;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+
+
+// Ratings
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    li {
+        background-color: $dark-blue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: $paragraph;
+        border-radius: 50%;
+    }
+
+    button {
+        color: $light-grey;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        width: 3.1rem;
+        height: 3.1rem;
+        // padding: 2.5rem;
+    }
+}
+
+#ratings-btn {
+    transition: all 0.5s;
+}
+
+#ratings-btn:hover {
+    background-color: $orange;
+}
+
+button:focus {
+    background-color: $medium-grey;
+    color: #FFF;
+}
+
+
+
+// Button-Submit
+
+#submit-btn {
+    background-color: $orange;
+    font-size: $paragraph;
+    font-weight: $regular;
+    letter-spacing: 0.2rem;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.8rem;
+    color: #FFF;
+    transition: all 1s;
+}
+
+#submit-btn:hover {
+    background-color: #FFF;
+    color: $orange;
+}
+
+#submit-btn:focus {
+    background-color: #FFF;
+    color: $orange;
+}
+
+
+
+// Thanks-card
+
+#thanks-state {
+    text-align: center;
+
+    p {
+        margin: 0 0.3rem 0 0.3rem;
+    }
+}
+
+h2 {
+    color: #FFF;
+    margin: 2rem 0 1rem 0 ;
+}
+
+.illustration-thanks {
+    margin: 0.5rem auto 1.5rem auto ;
+}
+
+#vote-container {
+    background-color: $dark-blue;
+    color: $orange;
+    border-radius: 50rem;
+    margin: auto;
+    padding: 0.5rem 0.5rem;
+    width: 50%;
+
+    p {
+        color: $orange;
+        display: inline;
+        margin: 0;
+    }
+}
+
+
+
+// Footer
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    margin-top: 10rem;
+}
+
+
+@media (max-width: 450px) {
+    .card {
+        width: 16.9rem;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+        
+        p {
+            font-size: 0.85rem;
+        }
+    }
+
+    ul {
+        button {
+            width: 2.6rem;
+            height: 2.6rem
+        }
+    }
+
+    .star-icon {
+        padding: 0.7rem;
+    }
+
+    #submit-btn {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    #vote-container {
+        padding: 0.3rem 0.1rem;
+        width: 65%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
